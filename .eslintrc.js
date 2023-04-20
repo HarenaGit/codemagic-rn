@@ -1,0 +1,55 @@
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+    commonjs: true,
+    "react-native/react-native": true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "@react-native-community",
+  ],
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
+  },
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: "module",
+  },
+  plugins: ["react", "react-hooks", "react-native", "@typescript-eslint", "prettier"],
+  rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        singleQuote: false,
+        semi: false,
+        useTabs: false,
+        tabWidth: 2,
+        trailingComma: "all",
+        bracketSpacing: true,
+        printWidth: 100,
+        jsxBracketSameLine: false,
+        jsxSingleQuote: false,
+        arrowParens: "always",
+      },
+    ],
+    indent: ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    quotes: ["error", "double", , { avoidEscape: true }],
+    semi: ["error", "never"],
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+  },
+}

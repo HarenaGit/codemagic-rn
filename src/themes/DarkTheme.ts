@@ -1,0 +1,62 @@
+export const DarkTheme: ReactNativePaper.Theme = {
+  dark: true,
+  colors: {
+    primary: "#2B1A5E",
+    onPrimary: "#ffffff",
+    secondary: "#f26122",
+    background: "#ffffff",
+    card: "#EBEEF2",
+    onCard: "#000000",
+    input: "#E5E5E5",
+    inputLabelEmpty: "#848484",
+    inputLabel: "#000000",
+    searchfield: "#E9E9E9",
+    text: "#ffffff",
+    border: "#ffffff",
+    accent: "#03dac6",
+    backdrop: "rgba(0, 0, 0, 0.5)",
+    disabled: "rgba(255, 255, 255, 0.38)",
+    error: "#f44336",
+    success: "#4caf50",
+    notification: "#ff80ab",
+    onBackground: "#FFFFFF",
+    onSurface: "#FFFFFF",
+    placeholder: "rgba(255, 255, 255, 0.54)",
+    surface: "#121212",
+  },
+  navigation: {
+    dark: true,
+    colors: {
+      dark: "#1e1241",
+      primary: "#2B1A5E",
+      background: "#ffffff",
+      card: "#f26122",
+      text: "#ffffff",
+      border: "#f26122",
+      notification: "#f26122",
+    },
+  },
+  fonts: {
+    light: {
+      fontFamily: "DMSans-Regular",
+      fontWeight: "normal",
+    },
+    medium: {
+      fontFamily: "DMSans-Medium",
+      fontWeight: "normal",
+    },
+    regular: {
+      fontFamily: "DMSans-Regular",
+      fontWeight: "normal",
+    },
+    thin: {
+      fontFamily: "DMSans-Regular",
+      fontWeight: "normal",
+    },
+  },
+  animation: {
+    scale: 1.0,
+  },
+  mode: "exact",
+  roundness: 4,
+}
